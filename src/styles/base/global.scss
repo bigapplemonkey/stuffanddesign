@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover,
+a:focus {
+  color: inherit; /* Inherit color from parent element */
+}
+
+a:active {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Default styles for all devices */
+.element {
+  /* Your default styles here */
+}
+
+/* Styles for mobile devices (up to 767px width) */
+@media only screen and (max-width: 767px) {
+  .element {
+    /* Your styles for mobile devices here */
+  }
+}
+
+/* Styles for tablets (768px to 1023px width) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .element {
+    /* Your styles for tablets here */
+  }
+}
+
+/* Styles for larger devices (1024px and above) */
+@media only screen and (min-width: 1024px) {
+  .element {
+    /* Your styles for larger devices here */
+  }
+}

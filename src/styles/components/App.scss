@@ -1,0 +1,17 @@
+html,
+body {
+  background: var(--primary-color-white);
+}
+
+h1 {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

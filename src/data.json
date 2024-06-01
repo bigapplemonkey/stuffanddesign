@@ -1,0 +1,10 @@
+{
+  "personal": {
+    "email": "info@stuffanddesign.com"
+  },
+  "medias": [
+    { "type": "github", "link": "https://github.com/bigapplemonkey/" },
+    { "type": "linkedin", "link": "https://www.linkedin.com/in/jorgeasuaje/" },
+    { "type": "dribbble", "link": "https://dribbble.com/stuffanddesign" }
+  ]
+}

@@ -1,0 +1,38 @@
+.media-links {
+  //layout
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.66rem;
+  //position
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+}
+
+.media-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Styles for mobile devices (up to 767px width) */
+@media only screen and (max-width: 767px) {
+  .media-links.navigation {
+    display: none;
+  }
+}
+
+/* Styles for tablets (768px to 1023px width) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .element {
+    /* Your styles for tablets here */
+  }
+}
+
+/* Styles for larger devices (1024px and above) */
+@media only screen and (min-width: 1024px) {
+  .element {
+    /* Your styles for larger devices here */
+  }
+}

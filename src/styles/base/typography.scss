@@ -1,0 +1,27 @@
+:root {
+  font-family: $font-family-base;
+  font-style: normal;
+  color: var(--primary-color-blue);
+}
+
+/* Body/Large */
+.body-large {
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: 0.0125em;
+}
+
+/* Body/Small */
+.body-small {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 0.875rem */
+  letter-spacing: 0.0175rem;
+}
+
+.text-blue {
+  color: var(--primary-color-blue);
+}
