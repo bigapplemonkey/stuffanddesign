@@ -9,7 +9,7 @@ import jsonData from '../data.json';
 const Navigation = ({ workAvailable }) => {
   const controls = useAnimation();
   return (
-    <div className="navigation-frame">
+    <>
       <div className="fixed-bar">
         <Link to="/">
           <LogoSVG className="logo" alt="Logo" />
@@ -45,7 +45,7 @@ const Navigation = ({ workAvailable }) => {
               viewBox="0 0 6 7"
               fill="none"
               animate={{
-                scale: [1, 1.4, 1],
+                scale: [1, 1.5, 1],
               }}
               transition={{
                 duration: 1,
@@ -63,8 +63,8 @@ const Navigation = ({ workAvailable }) => {
           </div>
         </motion.div>
       </a>
-      <MediaLinks isNavigation={true} />
-    </div>
+      <MediaLinks isNavigation={true} isFixed={true} />
+    </>
   );
 };
 

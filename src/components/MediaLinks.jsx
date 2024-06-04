@@ -2,11 +2,13 @@ import AnimatedSVG from './AnimatedSVG';
 import jsonData from '../data.json';
 import config from '../config';
 
-const MediaLinks = ({ isNavigation = false }) => {
+const MediaLinks = ({ isNavigation = false, isFixed = false }) => {
   const isDark = false;
-  const navClass = isNavigation === true ? ' navigation' : '';
+  let extraClasses = isNavigation === true ? ' navigation' : '';
+  extraClasses =
+    isFixed === true ? `${extraClasses} fixed-links` : extraClasses;
   return (
-    <div className={`media-links${navClass}`}>
+    <div className={`media-links${extraClasses}`}>
       {jsonData.medias.map(media => (
         <div className="media-icon" key={media.type}>
           <a href={media.link} target="_blank" rel="noopener noreferrer">

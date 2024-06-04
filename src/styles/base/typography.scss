@@ -17,9 +17,26 @@
 .body-small {
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200; //200
   line-height: 100%; /* 0.875rem */
   letter-spacing: 0.0175rem;
+}
+
+/* Header/Main */
+.header-main {
+  font-size: 9.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 11.1rem */
+  letter-spacing: -0.15rem;
+}
+
+/* Subheadline/Large */
+.subheadline-large {
+  font-size: 3rem; //3.4375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 85%; /* 2.92188rem */
 }
 
 .text-blue {

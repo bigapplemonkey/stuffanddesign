@@ -1,0 +1,63 @@
+.work-container {
+  //   background-color: red;
+  //   width: 100vw;
+  padding: 6.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-title {
+  //   margin-bottom: 2.5rem;
+}
+
+.work-filters {
+  width: 100%;
+  //   background-color: red;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  //   border-bottom: 0.0625rem solid var(--primary-color-blue);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  width: 100%;
+  padding: 1.5rem 0rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.break-line {
+  grid-column: 1 / span 3; /* This will make the item span across all three columns */
+  border: none; /* Remove default border */
+  height: 0.0625rem; /* Set the height of the horizontal rule */
+  background-color: var(
+    --primary-color-blue
+  ); /* Set the background color to blue */
+  margin: 0; /* Add margin for spacing */
+}
+
+/* Styles for tablet and under */
+@media only screen and (max-width: $tablet-breakpoint) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+  }
+  .break-line {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Styles for mobile and under */
+@media only screen and (max-width: $mobile-breakpoint) {
+  .work-grid {
+    grid-template-columns: repeat(1, 1fr); /* Three columns with equal width */
+  }
+
+  .break-line {
+    grid-column: 1 / span 1;
+  }
+}

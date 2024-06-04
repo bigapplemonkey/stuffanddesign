@@ -13,14 +13,16 @@
 // Animations
 @import 'animations/transition';
 
-// Layout
-// @import 'pages/header';
+// pages
+@import 'pages/work';
 
 // Components
 @import 'components/App';
 @import 'components/NavBar';
 @import 'components/Navigation';
 @import 'components/MediaLinks';
+@import 'components/FilterButton';
+@import 'components/WorkCard';
 
 // Utils
 @import 'utilities/mixins';

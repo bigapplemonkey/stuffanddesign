@@ -16,22 +16,33 @@
   height: 2.5rem;
 }
 
-/* Styles for mobile devices (up to 767px width) */
-@media only screen and (max-width: 767px) {
+.fixed-links {
+  position: fixed;
+}
+
+/* Styles for tablet and under */
+@media only screen and (max-width: $tablet-breakpoint) {
+  .media-links.navigation {
+    display: none;
+  }
+}
+
+/* Styles for mobile and under */
+@media only screen and (max-width: $mobile-breakpoint) {
   .media-links.navigation {
     display: none;
   }
 }
 
 /* Styles for tablets (768px to 1023px width) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: ($mobile-breakpoint + 1 )) and (max-width: $tablet-breakpoint) {
   .element {
     /* Your styles for tablets here */
   }
 }
 
 /* Styles for larger devices (1024px and above) */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: ($tablet-breakpoint + 1)) {
   .element {
     /* Your styles for larger devices here */
   }

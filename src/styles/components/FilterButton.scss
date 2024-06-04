@@ -1,0 +1,17 @@
+.filter-button {
+  display: flex;
+  height: 2.8125rem;
+  padding: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 2.1875rem;
+  background: var(--primary-color-white);
+  border: 1px solid var(--primary-color-blue);
+  color: var(--primary-color-blue);
+}
+
+.close-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+}
