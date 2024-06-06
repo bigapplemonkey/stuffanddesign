@@ -16,7 +16,7 @@ const TitleEntry = ({ content, delay = 0.8, duration = 0.5, classes = '' }) => {
       //   ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={controls1}
-      transition={{ delay, duration }}
+      transition={{ delay, duration, ease: 'easeOut' }}
       className={classes}
     >
       {content.split('').map((char, index) => (

@@ -21,8 +21,18 @@ a:active {
 }
 
 .section-title {
-  width: 100;
-  margin: auto 0.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.break-line {
+  grid-column: 1 / span 3; /* This will make the item span across all three columns */
+  border: none; /* Remove default border */
+  height: 0.0625rem; /* Set the height of the horizontal rule */
+  background-color: var(
+    --primary-color-blue
+  ); /* Set the background color to blue */
+  margin: 0; /* Add margin for spacing */
 }
 
 /* Default styles for all devices */

@@ -1,13 +1,10 @@
 .work-container {
   //   background-color: red;
   //   width: 100vw;
-  padding: 6.5rem;
+  padding: 13 * $base_gap_desktop;
   display: flex;
   flex-direction: column;
-}
-
-.work-title {
-  //   margin-bottom: 2.5rem;
+  gap: 3 * $base_gap_desktop;
 }
 
 .work-filters {
@@ -15,8 +12,7 @@
   //   background-color: red;
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
+  gap: $base_gap_desktop;
   //   border-bottom: 0.0625rem solid var(--primary-color-blue);
 }
 
@@ -24,21 +20,37 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
   width: 100%;
-  padding: 1.5rem 0rem;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 1.5rem;
+  gap: 3 * $base_gap_desktop;
   flex-wrap: wrap;
 }
 
-.break-line {
-  grid-column: 1 / span 3; /* This will make the item span across all three columns */
-  border: none; /* Remove default border */
-  height: 0.0625rem; /* Set the height of the horizontal rule */
-  background-color: var(
-    --primary-color-blue
-  ); /* Set the background color to blue */
-  margin: 0; /* Add margin for spacing */
+.back-to-top {
+  position: relative;
+}
+
+.to-top-button {
+  cursor: pointer; // Optional: Indicate interactivity
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  color: var(--primary-color-blue);
+  position: relative;
+  margin: 0 auto;
+  top: -2 * $base_gap_desktop;
+}
+
+.up-arrow {
+  background-color: var(--primary-color-white);
+  border: 0.0625rem solid var(--primary-color-blue);
+  border-radius: 50%; // Create a circle
+  padding: 10px 20px; // Adjust padding as needed
+  width: 7rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Styles for tablet and under */

@@ -13,6 +13,7 @@
   max-width: 100%;
   min-height: 23.125rem;
   background-size: cover;
+  position: relative;
 }
 
 .work-info {
@@ -26,4 +27,14 @@
 .work-title,
 .work-tags {
   align-self: stretch;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  background-color: var(--primary-color-white);
 }

@@ -2,12 +2,12 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   const location = useLocation();
@@ -23,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </>
   );
 }

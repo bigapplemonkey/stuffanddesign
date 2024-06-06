@@ -39,6 +39,19 @@
   line-height: 85%; /* 2.92188rem */
 }
 
+/* Subheadline/Small */
+.subheadline-small {
+  font-size: 2.125rem;
+  font-weight: 500;
+  line-height: 85%;
+}
+.marquee-type {
+  font-size: 16.5625rem;
+  font-weight: 700;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
 .text-blue {
   color: var(--primary-color-blue);
 }
