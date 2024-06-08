@@ -4,54 +4,141 @@
   color: var(--primary-color-blue);
 }
 
-/* Body/Large */
-.body-large {
-  font-size: 1.25em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 24px */
-  letter-spacing: 0.0125em;
-}
-
-/* Body/Small */
-.body-small {
+.menu-button {
+  font-family: 'gamay-editorial', sans-serif;
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 200; //200
-  line-height: 100%; /* 0.875rem */
-  letter-spacing: 0.0175rem;
+  font-weight: 400;
+  line-height: 1.8rem; /* 242.857% */
+  letter-spacing: 0.02625rem;
+  text-transform: uppercase;
 }
 
-/* Header/Main */
-.header-main {
-  font-size: 9.25rem;
-  font-style: normal;
+.headline2 {
+  font-family: 'gamay-editorial', sans-serif;
+  font-size: 9.6875rem;
+  font-style: italic;
   font-weight: 600;
-  line-height: 120%; /* 11.1rem */
-  letter-spacing: -0.15rem;
+  line-height: 9.75rem; /* 100.645% */
+  letter-spacing: -0.19375rem;
 }
 
-/* Subheadline/Large */
-.subheadline-large {
-  font-size: 3rem; //3.4375rem;
+.card-title {
+  font-family: 'gamay-editorial', sans-serif;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 85%; /* 2.92188rem */
+  font-weight: 400;
+  line-height: 105%; /* 2.375rem */
 }
 
-/* Subheadline/Small */
-.subheadline-small {
-  font-size: 2.125rem;
-  font-weight: 500;
-  line-height: 85%;
-}
-.marquee-type {
-  font-size: 16.5625rem;
-  font-weight: 700;
-  line-height: auto;
-  letter-spacing: 0;
+.filter-text {
+  font-family: 'gamay-editorial', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2.125rem; /* 170% */
+  letter-spacing: 0.0375rem;
 }
 
-.text-blue {
-  color: var(--primary-color-blue);
+.p-large {
+  font-family: 'gamay-editorial', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 1.95rem */
+  letter-spacing: -0.015rem;
 }
+
+/* P Medium */
+.card-tags {
+  font-family: Gamay;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.125rem; /* 154.545% */
+  letter-spacing: 0.0275rem;
+}
+
+// /* Body/Large */
+// .body-large {
+//   // font-size: 1.25em;
+//   // font-style: normal;
+//   // font-weight: 400;
+//   // line-height: 120%; /* 24px */
+//   // letter-spacing: 0.0125em;
+//   font-family: 'gamay-editorial', sans-serif;
+//   font-size: 1.1875rem;
+//   font-style: normal;
+//   font-weight: 300;
+//   line-height: 120%; /* 1.5rem */
+//   letter-spacing: 0.0125rem;
+// }
+
+// /* Body/Small */
+// .body-small {
+//   // font-size: 0.875rem;
+//   // font-style: normal;
+//   // font-weight: 200; //200
+//   // line-height: 100%; /* 0.875rem */
+//   // letter-spacing: 0.0175rem;
+//   font-family: 'gamay-editorial', sans-serif;
+//   font-size: 0.875rem;
+//   font-style: normal;
+//   font-weight: 300;
+//   line-height: 100%; /* 0.875rem */
+//   letter-spacing: 0.0175rem;
+// }
+
+// /* Header/Main */
+// .header-main {
+//   // font-size: 9.25rem;
+//   // font-style: normal;
+//   // font-weight: 600;
+//   // line-height: 120%; /* 11.1rem */
+//   // letter-spacing: -0.15rem;
+//   font-family: 'gamay-editorial', sans-serif;
+//   font-size: 9.25rem;
+//   font-style: italic;
+//   font-weight: 600;
+//   // line-height: 120%; /* 11.1rem */
+//   letter-spacing: -0.2775rem;
+// }
+
+// /* Subheadline/Large */
+// .subheadline-large {
+//   // font-size: 3rem; //3.4375rem;
+//   // font-style: normal;
+//   // font-weight: 500;
+//   // line-height: 85%; /* 2.92188rem */
+//   font-family: 'gamay-editorial', sans-serif;
+//   font-size: 2.8125rem;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 95%; /* 2.67188rem */
+//   letter-spacing: -0.1125rem;
+// }
+
+// /* Subheadline/Small */
+// .subheadline-small {
+//   // font-size: 2.125rem;
+//   // font-weight: 500;
+//   // line-height: 85%;
+//   font-family: 'gamay-editorial', sans-serif;
+
+//   font-family: 'gamay-editorial', sans-serif;
+//   font-size: 2.125rem;
+//   font-style: italic;
+//   font-weight: 600;
+//   line-height: 120%;
+// }
+// .marquee-type {
+//   font-size: 16.5625rem;
+//   font-style: italic;
+//   font-weight: 600;
+//   line-height: normal;
+//   letter-spacing: -0.16563rem;
+// }
+
+// .text-blue {
+//   color: var(--primary-color-blue);
+// }

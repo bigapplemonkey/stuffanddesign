@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const transition = OriginalComponent => {
+const Transition = OriginalComponent => {
   const animation = () => (
     <>
       <OriginalComponent />
@@ -35,4 +35,4 @@ const transition = OriginalComponent => {
   return animation;
 };
 
-export default transition;
+export default Transition;

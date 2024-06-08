@@ -1,0 +1,21 @@
+.work-grid {
+  display: flex;
+  flex-direction: column;
+  // gap: 2rem;
+  align-self: stretch;
+}
+
+.work-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5625rem;
+  align-self: stretch;
+}
+
+.break-line {
+  grid-column: 1 / span 3;
+  border: none;
+  height: $border-width;
+  background-color: var(--primary-color-blue);
+  margin: 0;
+}

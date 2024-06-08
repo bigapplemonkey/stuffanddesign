@@ -1,5 +1,5 @@
 import TitleEntry from '../animations/TitleEntry';
-import transition from '../animations/transition';
+import transition from '../animations/Transition';
 import jsonData from '../data.json';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import WorkGrid from '../components/WorkGrid';

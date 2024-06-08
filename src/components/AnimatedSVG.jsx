@@ -2,8 +2,10 @@ import { motion, useAnimation } from 'framer-motion';
 import config from '../config';
 
 const AnimatedSVG = ({ iconPath, isDark = false, altProp }) => {
-  const hoverInColor = isDark === true ? config.APP_WHITE : config.APP_BLUE;
-  const hoverOutColor = isDark === true ? config.APP_BLUE : config.APP_WHITE;
+  const hoverInColor =
+    isDark === true ? config.STYLES.APP_WHITE : config.STYLES.APP_BLUE;
+  const hoverOutColor =
+    isDark === true ? config.STYLES.APP_BLUE : config.STYLES.APP_WHITE;
   const duration = 0.2;
 
   const circleAnimation = useAnimation();

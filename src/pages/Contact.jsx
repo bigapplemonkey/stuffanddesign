@@ -1,4 +1,4 @@
-import transition from '../animations/transition';
+import transition from '../animations/Transition';
 const Contact = () => {
   return (
     <div className="container">

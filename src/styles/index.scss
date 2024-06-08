@@ -1,5 +1,7 @@
 // External
+@import 'normalize.css';
 @import url('https://use.typekit.net/ipv7pat.css');
+@import url('https://use.typekit.net/fhj1fwz.css');
 
 // Variables
 @import 'utilities/variables';
@@ -14,17 +16,24 @@
 @import 'animations/transition';
 
 // pages
-@import 'pages/work';
+// @import 'pages/work';
+@import 'pages/about';
 
 // Components
 @import 'components/App';
 @import 'components/NavBar';
 @import 'components/Navigation';
-@import 'components/MediaLinks';
+@import 'components/GridFilter';
 @import 'components/FilterButton';
 @import 'components/WorkCard';
-@import 'components/Footer';
-@import 'components/MarqueeText';
+@import 'components/WorkGrid';
+@import 'components/ScrollToTopButton';
+
+// @import 'components/MediaLinks';
+// @import 'components/FilterButton';
+// @import 'components/WorkCard';
+// @import 'components/Footer';
+// @import 'components/MarqueeText';
 
 // Utils
 @import 'utilities/mixins';

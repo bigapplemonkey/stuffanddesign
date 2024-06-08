@@ -1,27 +1,35 @@
 .work-card {
   display: flex;
+  height: 36.6rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.4rem;
-  //   width: 32%;
+  gap: 0.3rem;
+  flex: 1 0 0;
+  padding: 1.57rem 0;
 }
 
 .work-image {
-  //   height: 28.4375rem;
+  display: flex;
+  height: 27.625rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-shrink: 0;
   align-self: stretch;
-  border-radius: 0.9375rem;
-  max-width: 100%;
-  min-height: 23.125rem;
-  background-size: cover;
-  position: relative;
+  border-radius: 1.5rem;
 }
 
 .work-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 0.8rem;
+  flex: 1 0 0;
   align-self: stretch;
+}
+
+.work-title {
+  flex: 1 0 0;
 }
 
 .work-title,
@@ -29,12 +37,6 @@
   align-self: stretch;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: 0;
-  background-color: var(--primary-color-white);
+.work-tags {
+  text-transform: uppercase;
 }

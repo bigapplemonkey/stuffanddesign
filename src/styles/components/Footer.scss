@@ -41,9 +41,13 @@
 .footer .media-links {
   position: relative;
   flex-direction: row;
-  padding: 1.5rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 .footer .break-line {
   width: 100%;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer .nav-links {
+  gap: 1.5rem;
 }

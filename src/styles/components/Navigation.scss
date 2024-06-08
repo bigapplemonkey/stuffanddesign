@@ -1,18 +1,25 @@
 .fixed-bar {
   position: fixed;
   z-index: 100;
-  width: 100vw;
   display: flex;
-  padding: 0.85rem 2rem;
-  justify-content: space-between;
+  height: 5.5rem;
+  padding: 0rem 2.5rem;
   align-items: center;
+  justify-content: space-between;
   align-self: stretch;
-  background-color: rgba(255, 255, 255, 0.96);
+  width: 100%;
 }
 
 .logo {
   width: 5.7rem;
+  height: 5.7rem;
 }
+
+// .place-holder {
+//   width: 3rem;
+//   background-color: #0f0;
+//   height: 3rem;
+// }
 
 .left-text {
   position: fixed;

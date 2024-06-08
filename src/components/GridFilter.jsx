@@ -1,13 +1,12 @@
 import FilterButton from '../components/FilterButton';
-import { useState } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 const GridFilter = ({ filters, onUpdate }) => {
   const [selectedFilters, setSelectedFilters] = useState(['All']);
   const [filterParams, setFilterParams] = useSearchParams();
 
-  console.log('in grid', selectedFilters);
+  // console.log('in grid', selectedFilters);
 
   useEffect(() => {
     let initialFilter = ['All'];
@@ -40,11 +39,11 @@ const GridFilter = ({ filters, onUpdate }) => {
         }
       }
     }
-    setSelectedFilters(
-      newSelectedFilters.length === 0 ? ['All'] : newSelectedFilters
-    );
+    newSelectedFilters =
+      newSelectedFilters.length === 0 ? ['All'] : newSelectedFilters;
+    setSelectedFilters(newSelectedFilters);
     setFilterParams({ filters: newSelectedFilters.join(',') });
-    onUpdate(newSelectedFilters.length === 0 ? ['All'] : newSelectedFilters);
+    onUpdate(newSelectedFilters);
   };
 
   return (
@@ -58,7 +57,7 @@ const GridFilter = ({ filters, onUpdate }) => {
         <FilterButton
           key={filter}
           content={filter}
-          onUpdate={handleUpdate} // Pass onUpdate function to FilterButton
+          onUpdate={handleUpdate}
           isSelected={selectedFilters.includes(filter)}
         />
       ))}

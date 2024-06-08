@@ -1,5 +1,5 @@
 import entry from '../animations/entry';
-import transition from '../animations/transition';
+import transition from '../animations/Transition';
 import SiteFrame from '../components/SiteFrame';
 
 const Home = () => {

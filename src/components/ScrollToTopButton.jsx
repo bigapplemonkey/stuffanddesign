@@ -3,31 +3,31 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import config from '../config';
 
-const ScrollToTopButton = ({
-  duration = 0.5,
-  delay = 0,
-  delayGap = 0,
-  isDark = false,
-}) => {
+const ScrollToTopButton = ({ isDark = false }) => {
   const [isVisible, setIsVisible] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
+
+  const duration = config.ANIMATION.FILTER_BUTTON_DURATION;
+  const ease = config.ANIMATION.CUBIC_BEZIER;
+
   const circleAnimation = useAnimation();
   const iconAnimation = useAnimation();
-  const hoverInColor = isDark === true ? config.APP_WHITE : config.APP_BLUE;
-  const hoverOutColor = isDark === true ? config.APP_BLUE : config.APP_WHITE;
 
-  // Detect window scroll position for button visibility
+  const hoverInColor =
+    isDark === true ? config.STYLES.APP_WHITE : config.STYLES.APP_BLUE;
+  const hoverOutColor =
+    isDark === true ? config.STYLES.APP_BLUE : config.STYLES.APP_WHITE;
+
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    setIsVisible(scrollTop > 100); // Show button only after scrolling past 100px
+    setIsVisible(scrollTop > 100);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    // Cleanup function to remove event listener on component unmount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -42,14 +42,9 @@ const ScrollToTopButton = ({
         ref={ref}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-        transition={{ duration, delay: delay - delayGap, ease: 'easeOut' }}
+        transition={{ duration, ease }}
       >
-        <hr
-          className="break-line"
-          //   initial={{ transformOrigin: 'left', scaleX: 0 }}
-          //   animate={{ scaleX: inView ? 1 : 0 }}
-          //   transition={{ duration, delay: delay - delayGap, ease: 'easeOut' }}
-        />
+        <hr className="break-line" />
         <motion.button
           className="to-top-button"
           onClick={scrollToTop}
@@ -57,27 +52,26 @@ const ScrollToTopButton = ({
             circleAnimation.start({
               borderColor: hoverOutColor,
               backgroundColor: hoverInColor,
-              transition: { duration: 0.2, ease: 'easeIn' },
+              transition: { duration, ease },
             });
             iconAnimation.start({
               fill: hoverOutColor,
-              transition: { duration: 0.2, ease: 'easeIn' },
+              transition: { duration, ease },
             });
           }}
           onHoverEnd={() => {
             circleAnimation.start({
               borderColor: hoverInColor,
-              backgroundColor: hoverOutColor,
-              transition: { duration: 0.2, ease: 'easeOut' },
+              backgroundColor: '#e2eaf4', //hoverOutColor <--- Fix
+              transition: { duration, ease },
             });
             iconAnimation.start({
               fill: hoverInColor,
-              transition: { duration: 0.2, ease: 'easeIn' },
+              transition: { duration, ease },
             });
           }}
         >
           <motion.div className="up-arrow" animate={circleAnimation}>
-            {/* <img src={upArrow} alt="Up arrow icon" /> */}
             <svg
               id="Layer_1"
               data-name="Layer 1"
@@ -112,8 +106,7 @@ const ScrollToTopButton = ({
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{
               duration,
-              delay: delay - delayGap + 0.1,
-              ease: 'easeOut',
+              ease,
             }}
           >
             BACK TO TOP

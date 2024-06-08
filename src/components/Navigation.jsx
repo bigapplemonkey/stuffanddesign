@@ -1,24 +1,21 @@
 import NavBar from './NavBar';
 import { ReactComponent as LogoSVG } from '../assets/logo_v3.svg';
-import MediaLinks from './MediaLinks';
 import { Link } from 'react-router-dom';
-import emoji from '../assets/icons/hi-emoji.png';
-import { motion, useAnimation } from 'framer-motion';
-import jsonData from '../data.json';
+// import emoji from '../assets/icons/hi-emoji.png';
+// import { motion, useAnimation } from 'framer-motion';
+// import jsonData from '../data.json';
 
 const Navigation = ({ workAvailable }) => {
-  const controls = useAnimation();
+  // const controls = useAnimation();
   return (
     <>
       <div className="fixed-bar">
         <Link to="/">
           <LogoSVG className="logo" alt="Logo" />
         </Link>
-        <NavBar isHome={false} />
+        <NavBar isHome={true} />
       </div>
-      <div className="left-text body-small">Creativity + Technology</div>
-      <div className="right-text body-small">By Jorge Asuaje</div>
-      <a href={`mailto:${jsonData.personal.email}`} className="mail-link">
+      {/* <a href={`mailto:${jsonData.personal.email}`} className="mail-link">
         <motion.div
           className="work-status"
           whileHover={() =>
@@ -62,8 +59,7 @@ const Navigation = ({ workAvailable }) => {
             </div>
           </div>
         </motion.div>
-      </a>
-      <MediaLinks isNavigation={true} isFixed={true} />
+      </a> */}
     </>
   );
 };
